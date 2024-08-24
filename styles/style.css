@@ -204,7 +204,7 @@ button:hover {
   font-size: 75px;
   text-transform: uppercase;
   line-height: 70px;
-  margin-bottom: 26px;
+  margin-bottom: 23px;
 }
 
 .content__accent {
@@ -267,7 +267,7 @@ button:hover {
   font-size: 18px;
   text-transform:capitalize;
   font-weight: 400;
-  line-height: 15px;
+  line-height: 11px;
 }
 
 .content__card-link {
@@ -303,5 +303,3 @@ button:hover {
 .content__card-link:focus {
   outline: none;
 } 
-
-/* test */
