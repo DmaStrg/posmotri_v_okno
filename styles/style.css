@@ -70,7 +70,7 @@ ol {
   flex-direction: row;
   justify-content: space-between;
   align-items: flex-end;
-  margin-top: 16px;
+  margin-top: 10px;
 }
 
 .visually-hidden {
@@ -98,21 +98,30 @@ button,
 
 .search-form__textfield {
   width: 222px;
-  height: 27px;
   font-family: 'Fira Sans Condensed', sans-serif;
   font-size: 18px;
   color: rgba(255, 255, 255, 0.7);
-  background-color:transparent;
-  border-top: 0.1px solid #fff;
+  background-color: transparent;
+  border-top: 1px solid #fff;
   border-bottom: 1px solid #fff;
   border-left: none;
   border-right: none;
   appearance: none;
   text-decoration: none;
+  padding: 2px 0;
+  box-sizing: border-box;
+  line-height: 24px;
 }
 
 .search-form__textfield:focus {
   outline: none;
+}
+
+.search-form__fieldset-title { /*gorod*/
+  font-family: 'Fira Sans Condensed', sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  margin-bottom: 4px;
 }
 
 .search-form__label:has(.search-form__textfield:focus-visible) {
@@ -124,16 +133,20 @@ button,
   text-decoration: none;
 }
 
-.search-form__checkbox-list {
+.search-form__label:focus-within {
+  text-decoration: none;
+}
+
+.search-form__checkbox-list { /*time*/
   display: flex;
   align-items: center;
-  gap: 15px;
-  margin-bottom: 8px;
+  gap: 14px;
+  margin-bottom: 6px;
 }
 
 .search-form__pseudo-checkbox {
-  width: 19px;
-  height: 19px;
+  width: 18px;
+  height: 18px;
   border: 1px solid #fff;
   display: flex;
   align-items: center;
@@ -161,11 +174,12 @@ button,
   text-decoration: underline;
 }
 
+
 .button {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  height: 34px;
+  padding: 6px 0;
   border: 1px solid #fff;
   background-color: transparent;
   color: #fff;
@@ -204,7 +218,7 @@ button:hover {
   font-size: 75px;
   text-transform: uppercase;
   line-height: 70px;
-  margin-bottom: 23px;
+  margin-bottom: 22px;
 }
 
 .content__accent {
@@ -212,10 +226,11 @@ button:hover {
 }
 
 .content__list {
-  width: 100%;
+  width: 399px;
   height: 299px;
   position: relative;
   overflow-y: auto;
+  
 }
 
 .content__list::-webkit-scrollbar {
@@ -231,50 +246,19 @@ button:hover {
 }
 
 .content__list-item:not(:last-child) {
-  margin-bottom: 34px; 
-}
-
-.content__video-card {
-  display: flex; 
-  flex-direction: row; 
-  align-items: flex-start;
-}
-
-.content__video-card-thumbnail {
-  flex-shrink: 0;
-  object-fit: cover;
-  height: 103px;
-  width: 193px;
-  margin-left: 10px;
-}
-
-.content__video-card-description-container {
-  flex: auto;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  padding-left: 3px;
-}
-
-.search-form__fieldset-title {
-  font-family: 'Fira Sans Condensed', sans-serif;
-  font-size: 18px;
-  margin-bottom: 5px;
-}
-
-.content__video-card-description {
-  font-family: 'Fira Sans Condensed', sans-serif;
-  font-size: 18px;
-  text-transform:capitalize;
-  font-weight: 400;
-  line-height: 11px;
+  margin-bottom: 34px;
 }
 
 .content__card-link {
   display: block;
+  max-width: 100%;
   font-family: 'Oswald', sans-serif;
-  font-size: 19px;
+  font-size: 20px;
+  line-height: 40px;
   text-decoration: none;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
   color: #fff;
   text-transform: uppercase;
 }
@@ -298,8 +282,38 @@ button:hover {
 
 .content__card-link:focus-visible {
   border: 1px solid #fff;
+  background-color: transparent;
 }
 
 .content__card-link:focus {
   outline: none;
 } 
+
+.content__video-card { /*razmer card */
+  display: flex; 
+  flex-direction: row; 
+  align-items: flex-start;
+}
+
+.content__video-card-thumbnail { /*picture card */
+  flex-shrink: 0;
+  object-fit: cover;
+  height: 103px;
+  width: 187px;
+}
+
+.content__video-card-description-container { /*text big otsup */
+  flex: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-left: 3px;
+}
+
+.content__video-card-description { /*text card */
+  font-family: 'Fira Sans Condensed', sans-serif;
+  font-size: 18px;
+  text-transform:capitalize;
+  font-weight: 400;
+  line-height: 11px;
+}
