@@ -8,6 +8,9 @@ html {
 }
 
 .page {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   inline-size: 1200px;
   block-size: 100%;
   margin: auto;
@@ -42,12 +45,9 @@ ol {
 
 .content {
   display: flex;
-  flex-direction: row;
   align-items: flex-end;
-  margin: 0 auto;
-  width: 1140px;
+  inline-size: 1140px;
   gap: 30px;
-  overflow: visible;
 }
 
 .result__video {
@@ -60,7 +60,6 @@ ol {
 .result__video-container {
   width: 711px;
   height: 388px;
-  margin: 207px 0 17px 0;
   display: flex;
   position: relative;
 }
@@ -71,6 +70,7 @@ ol {
   flex-direction: row;
   justify-content: space-between;
   align-items: flex-end;
+  margin-top: 16px;
 }
 
 .visually-hidden {
