@@ -98,7 +98,7 @@ button,
 }
 
 .search-form__textfield {
-  width: 222px;
+  width: 225px;
   font-family: 'Fira Sans Condensed', sans-serif;
   font-size: 18px;
   color: rgba(255, 255, 255, 0.7);
@@ -287,6 +287,7 @@ button:hover {
   align-items: start;
 }
 
+
 .content__video-card-title {
   width: 200px;
   margin-bottom: 6px;
@@ -303,10 +304,9 @@ button:hover {
 .content__video-card-thumbnail { /*picture card */
   flex-shrink: 0;
   object-fit: cover;
-  width: 190px;
+  width: 194px;
   height: 103px;
-  padding: 2px;
-  margin-left: -16px;
+  margin: 2px;
 }
 
 .content__video-card-description-container { /*text big otsup */
@@ -314,8 +314,8 @@ button:hover {
   display: flex;
   flex-direction: column;
   justify-content:center;
-  margin-top: 2px;
-  margin-left: 2px;
+  margin-top: 3px;
+  margin-left: 1px;
 }
 
 .content__video-card-description { /*text card */
